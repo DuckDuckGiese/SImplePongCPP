@@ -59,6 +59,10 @@ public:
             break;
         }
     }
+    friend ostream & operator<<(ostream & o, cBall c)
+    {
+        o << "Ball [" << c.x << ", " << c.y << "][" << c.direction << "]" << endl;
+    }
 };
 
 int main()
