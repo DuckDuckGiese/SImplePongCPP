@@ -133,10 +133,34 @@ public:
         player1->Reset();
         player2->Reset();
     }
+    void Draw()
+    {
+        system("cls");
+        for (int i = 0; i < width + 2; i++)
+            cout << "#";
+        cout << endl;
+
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            int ballx = ball->getX();
+            int bally = ball->getY();
+            int player1x = player1->getX();
+            int player2x = player2->getX();
+            int player1y = player1->getY();
+            int player2y = player2->getY();
+        }
+    }
+
+        for (int i = 0; i < width + 2; i++)
+            cout << "#";
+        cout << endl;
+    }
 };
 int main()
 {
     
-
+    cGameManager(40, 20);
     return 0;
 }
