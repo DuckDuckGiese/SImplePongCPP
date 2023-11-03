@@ -150,6 +150,14 @@ public:
             int player2x = player2->getX();
             int player1y = player1->getY();
             int player2y = player2->getY();
+
+            if (j == 0)
+                cout << "#";
+
+
+
+            if (j == width - 1)
+                cout << "#";
         }
     }
 
