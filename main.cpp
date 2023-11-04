@@ -137,7 +137,7 @@ public:
     {
         system("cls");
         for (int i = 0; i < width + 2; i++)
-            cout << "#";
+            cout << "\xB2";
         cout << endl;
 
     for (int i = 0; i < height; i++)
@@ -152,7 +152,7 @@ public:
             int player2y = player2->getY();
 
             if (j == 0)
-                cout << "#";
+                cout << "\xB2";
 
             if (ballx == j && bally == i)
                 cout << "0"; //ball
@@ -160,9 +160,11 @@ public:
                 cout << "#"; //player1
             else if (player2x == j && player2y == i)
                 cout << "#"; //player2
+            else
+                cout << " ";
 
             if (j == width - 1)
-                cout << "#";
+                cout << "\xB2";
         }
     }
 
