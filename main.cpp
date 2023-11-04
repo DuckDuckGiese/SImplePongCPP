@@ -154,7 +154,12 @@ public:
             if (j == 0)
                 cout << "#";
 
-
+            if (ballx == j && bally == i)
+                cout << "0"; //ball
+            else if (player1x == j && player1y == i)
+                cout << "#"; //player1
+            else if (player2x == j && player2y == i)
+                cout << "#"; //player2
 
             if (j == width - 1)
                 cout << "#";
