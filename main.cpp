@@ -157,9 +157,25 @@ public:
             if (ballx == j && bally == i)
                 cout << "0"; //ball
             else if (player1x == j && player1y == i)
-                cout << "#"; //player1
+                cout << "\xDB"; //player1
             else if (player2x == j && player2y == i)
-                cout << "#"; //player2
+                cout << "\xDB"; //player2
+
+            else if (player1x == j && player1y + 1 == i)
+                cout << "\xDB"; //player1
+            else if (player1x == j && player1y + 2 == i)
+                cout << "\xDB"; //player1
+            else if (player1x == j && player1y + 3 == i)
+                cout << "\xDB"; //player1
+
+            else if (player2x == j && player2y + 1 == i)
+                cout << "\xDB"; //player1
+            else if (player2x == j && player2y + 2 == i)
+                cout << "\xDB"; //player1
+            else if (player2x == j && player2y + 3 == i)
+                cout << "\xDB"; //player1
+
+
             else
                 cout << " ";
 
@@ -169,7 +185,7 @@ public:
     }
 
         for (int i = 0; i < width + 2; i++)
-            cout << "#";
+            cout << "\xB2";
         cout << endl;
     }
 };
